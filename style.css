@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.start-menu {
+    max-width: 400px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 24px;
+    text-align: center;
+}
+
+.start-menu h1 {
+    margin-bottom: 16px;
+    color: #d2691e;
+}
+
+.start-menu p {
+    margin-bottom: 24px;
+    color: #333;
+}
+.btn {
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+ }
+
+.start-btn {
+    background: #d2691e;
+}
+
+.start-btn:hover {
+    background: #a0522d;
+}
+
+.load-btn {
+    background: #244196;
+}
+
+.load-btn:hover {
+    background: #1a306e;
+}
+
+.preset-btn {
+    background: #38803c;
+}
+
+.preset-btn:hover {
+    background: #2e6b32;
+}
