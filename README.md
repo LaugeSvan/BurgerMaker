@@ -1,12 +1,22 @@
 # BurgerMaker
-## Iteration#1
-### burger maker save uuid dragndrop ingrediens maybe?
-Drag n' drop ingredients
-<br>
-Ability to save with an uuid or so.
-<br>
-Ability to choose everything about burger incl. bun
-<br>
-Branding designing somehow? Maybe on other website. Then ability to import image and preview (3d model even?).
-<br>
-Also should be able to download either 3d model or 2d image from every angle (n ne e es s sv v vn)
+
+## THIS PROJECT IS NOT DONE YET!!!
+
+Welcome to BurgerMaker – the interactive app for building your dream burger!
+
+Drag and drop ingredients to stack your perfect creation. Choose everything: buns, patties, condiments, and fresh toppings. Want to save your masterpiece? Each burger gets a unique ID so you can load it up later or share with friends.
+
+Feeling creative? You can design your own branding, import images, and even preview your burger in 3D. Download a snapshot or a 3D model from any angle (north, east, south, west, and more).
+
+## Features
+
+- **Drag & Drop Ingredients:** Build burgers your way, layer by layer.
+- **Custom Buns & Patties:** Pick every part of your burger.
+- **Save & Load:** Save your burger with a unique ID and reload it anytime.
+- **Branding & Design:** Import images for custom branding.
+- **3D Preview:** See your burger from every angle.
+- **Export:** Download your burger as a 2D image or 3D model.
+
+---
+
+Ready to get started? Hit "Start" and let your creativity run wild!
