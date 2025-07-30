@@ -57,6 +57,19 @@ body, html {
     color: #333;
 }
 
+.mobile-cred {
+    display: none;
+    max-width: 110px;
+    margin: 80px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 16px 12px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -107,10 +120,18 @@ body, html {
 }
 
 .back-btn {
-    background: #1976d2; /* Distinct blue */
+    background: #1976d2;
     margin-top: 16px;
 }
 
 .back-btn:hover {
     background: #1565c0;
+}
+
+.cred-btn {
+    background: #8b4513;
+}
+
+.cred-btn:hover {
+    background: #6f3c0b;
 }
