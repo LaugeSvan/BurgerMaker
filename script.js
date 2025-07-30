@@ -1,0 +1,1 @@
+var loadUuid = prompt("Enter the UUID of the burger you want to load:");
