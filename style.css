@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #f8f8f8;
     margin: 0;
     padding: 0;
@@ -7,6 +7,17 @@ body {
 
 body, html {
     height: 100%;
+}
+
+.dev-tag {
+    display: inline-block;
+    background: #b8860b;
+    color: #fff;
+    border-radius: 6px;
+    padding: 6px 16px;
+    margin: 6px 8px 0 0;
+    font-size: 1rem;
+    box-shadow: 0 2px 8px rgba(184,134,11,0.12);
 }
 
 .bg {
@@ -93,4 +104,13 @@ body, html {
 
 .preset-btn:hover {
     background: #2e6b32;
+}
+
+.back-btn {
+    background: #1976d2; /* Distinct blue */
+    margin-top: 16px;
+}
+
+.back-btn:hover {
+    background: #1565c0;
 }

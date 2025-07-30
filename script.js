@@ -15,8 +15,8 @@ document.addEventListener('keydown', function(event) {
     if (keyBuffer.length > 20) keyBuffer.shift();
 
     // Check for the desired word (case-insensitive)
-    if (keyBuffer.join('').toLowerCase().includes('admin'.toLowerCase())) {
+    if (keyBuffer.join('').toLowerCase().includes('credits'.toLowerCase())) {
         keyBuffer = [];
-        window.location.href = 'admin.html'; // Redirect to desired page
+        window.location.href = 'credits.html'; // Redirect to desired page
     }
 });
