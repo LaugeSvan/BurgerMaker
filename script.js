@@ -6,6 +6,17 @@ function getBurgerId() {
 
 let keyBuffer = [];
 
+console.log("Is user on mobile? " + window.matchMedia("(max-width: 999px)").matches);
+// Check if the viewport is less than 1000 pixels wide
+if (window.matchMedia("(max-width: 999px)").matches) {
+    document.addEventListener("DOMContentLoaded", function() {
+        const mobileDiv = document.querySelector(".mobile-cred");
+        if (mobileDiv) {
+            mobileDiv.style.display = "block";
+        }
+    });
+}
+
 document.addEventListener('keydown', function(event) {
     // Only add printable characters
     if (event.key.length === 1) {
