@@ -17,6 +17,6 @@ document.addEventListener('keydown', function(event) {
     // Check for the desired word (case-insensitive)
     if (keyBuffer.join('').toLowerCase().includes('credits'.toLowerCase())) {
         keyBuffer = [];
-        window.location.href = 'credits.html'; // Redirect to desired page
+        window.location.href = '/credits/'; // Redirect to desired page
     }
 });
