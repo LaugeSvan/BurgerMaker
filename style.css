@@ -5,14 +5,35 @@ body {
     padding: 0;
 }
 
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url('images/hamburger-spinning.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    min-height: 100vh;
+    width: 100vw;
+}
+
 .start-menu {
-    max-width: 400px;
+    max-width: 450px;
     margin: 80px auto;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 32px 24px;
     text-align: center;
+    position: relative;
+    z-index: 2;
 }
 
 .start-menu h1 {
@@ -24,6 +45,7 @@ body {
     margin-bottom: 24px;
     color: #333;
 }
+
 .btn {
     color: #fff;
     border: none;
@@ -32,7 +54,8 @@ body {
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.2s;
- }
+    margin: 0px 5px;
+}
 
 .start-btn {
     background: #d2691e;
