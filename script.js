@@ -9,6 +9,7 @@ let keyBuffer = [];
 console.log("Is user on mobile? " + window.matchMedia("(max-width: 999px)").matches);
 // Check if the viewport is less than 1000 pixels wide
 if (window.matchMedia("(max-width: 999px)").matches) {
+    alert("You are on a mobile device. The burger maker is not optimized for mobile use. Please use a desktop browser for the best experience.");
     document.addEventListener("DOMContentLoaded", function() {
         const mobileDiv = document.querySelector(".mobile-cred");
         if (mobileDiv) {
