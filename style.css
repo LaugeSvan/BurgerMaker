@@ -60,14 +60,17 @@ body, html {
 .mobile-cred {
     display: none;
     max-width: 110px;
-    margin: 80px auto;
+    margin: 0 auto;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0,0,0,0.08);
     padding: 16px 12px;
     text-align: center;
-    position: relative;
-    z-index: 2;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    bottom: 130px;
 }
 
 .footer {
