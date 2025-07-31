@@ -1,4 +1,11 @@
 // Define functions and variables at the top
+const buns = ["Sesame", "Whole Wheat", "Gluten-Free"];
+const patties = ["Beef", "Chicken", "Veggie"];
+const condiments = ["Ketchup", "Mustard", "Mayo"];
+const meat = ["Bacon", "Ham"];
+const greens = ["Lettuce", "Spinach", "Arugula"];
+const extras = ["Cheese", "Pickles", "Onions"];
+
 function getBurgerId() {
     var loadBurgerId = prompt("!WIP! Please enter the ID of the burger you want to load:");
     console.log("ID to load:", loadBurgerId);
