@@ -9,6 +9,11 @@ body, html {
     height: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 .dev-tag {
     display: inline-block;
     background: #b8860b;
@@ -137,6 +142,49 @@ body, html {
 
 .cred-btn:hover {
     background: #6f3c0b;
+}
+
+.nav{
+    background-color: #f2be50;
+}
+
+.nav-text{
+   text-align: center;
+   margin: 0;
+   padding: 0;
+}
+
+.nav-btn {
+    margin-left: 12px;
+    margin-top: 48px;
+    cursor: pointer;
+}
+
+.nav-hr {
+    border: none;
+    border-bottom: 2px solid #000;
+    width: 100vw;
+    margin: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50.1%);
+}
+
+.ing-picker {
+    width: 20vh;
+    border: 1px solid black;
+    text-align: center;
+    height: 90vh;
+    overflow: scroll;
+    background-color: #d88e3a;
+}
+
+.ing-section {
+    margin: 16px 0;
+}
+
+.ing-section h2 {
+    color: #fefefe;
 }
 
 @media (max-width: 767px) {
