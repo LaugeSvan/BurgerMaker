@@ -138,3 +138,11 @@ body, html {
 .cred-btn:hover {
     background: #6f3c0b;
 }
+
+@media (max-width: 767px) {
+    html, body {
+        overflow: hidden;
+        height: 100%;
+        touch-action: none;
+    }
+}
