@@ -1,7 +1,12 @@
 // Define functions and variables at the top
 function getBurgerId() {
-    var loadBurgerId = prompt("Please enter the ID of the burger you want to load:");
+    var loadBurgerId = prompt("!WIP! Please enter the ID of the burger you want to load:");
     console.log("ID to load:", loadBurgerId);
+}
+
+function saveBurger() {
+    alert("This feature is not implemented yet. Please check back later!");
+    console.log("Save function called, but not implemented.");
 }
 
 let keyBuffer = [];
@@ -9,7 +14,7 @@ let keyBuffer = [];
 console.log("Is user on mobile? " + window.matchMedia("(max-width: 999px)").matches);
 // Check if the viewport is less than 1000 pixels wide
 if (window.matchMedia("(max-width: 999px)").matches) {
-    alert("You are on a mobile device. The burger maker is not optimized for mobile use. From now on, no mobile support is in mind. Please use a desktop browser for the best experience.");
+    alert("You are on a mobile device. In the maker, no mobile support is in mind. Please use a desktop browser for the best experience.");
     document.addEventListener("DOMContentLoaded", function() {
         const mobileDiv = document.querySelector(".mobile-cred");
         if (mobileDiv) {
