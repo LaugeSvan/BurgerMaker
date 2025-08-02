@@ -5,20 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maker - Burger Maker</title>
     <link rel="stylesheet" href="/../style.css">
-    <script src="/../script.js"></script>
     <link rel="icon" href="/../images/ico.gif" type="image/png">
-    <script src="https://kit.fontawesome.com/f133100050.js" crossorigin="anonymous"></script>
-    <script src="/../wip.js"></script>
 </head>
 <body>
     <nav class="nav">
-        <a href="/../" class="nav-btn fa-2xl"><i class="fa-regular fa-circle-xmark fa-xl nav-btn"></i></a>
-        <a onclick="saveBurger()" class="nav-btn fa-2xl"><i class="fa-regular fa-floppy-disk fa-xl nav-btn"></i></a>
-        <h1 class="nav-text">Welcome to the Maker!</h1>
+        <a href="/../" class="nav-btn fa-2xl"><img src="/../images/xmark.svg" alt="Close" class="nav-btn"></a>
+        <a onclick="saveBurger()" class="nav-btn fa-2xl"><img src="/../images/floppy-disk.svg" alt="Save" class="nav-btn"></a>
+        <h1 class="nav-title">Welcome to the Maker!</h1>
         <p class="nav-text">Here you can create your own custom burger. Start by choosing bun type, then which kind of patty you want, and then what you actually <em>want</em> in your burger.</p>
-        <p class="nav-text">When you're done, you can press <i class="fa-regular fa-floppy-disk fa-lg"></i> to save</p>
-        <p class="nav-text"><strong>Things marked with '*' are required</strong></p>
-            <br><br>
+        <p class="nav-text">When you're done, you can press <img src="/../images/floppy-disk.svg" alt="Save" class="ref-btn"> to save</p>
+        <p class="nav-text"><strong>Things marked with '*' are required. Things marked with ~ are vegan</strong></p>
+        <br><br>
         <hr class="nav-hr">
     </nav>
     <div class="ing-picker">
@@ -50,5 +47,8 @@
     <footer class="footer">
         <p>Made with 🍔... ❤️ by SalsaCat & ThomasSvan. 🤪</p>
     </footer>
+    <!--Load scripts at the end of file for better performance -->
+    <script src="/../script.js"></script>
+    <script src="/../wip.js"></script>
 </body>
 </html>
