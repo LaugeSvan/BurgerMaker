@@ -1,10 +1,81 @@
 // Define functions and variables at the top
-const buns = ["Sesame", "Whole Wheat", "Gluten-Free"];
-const patties = ["Beef", "Chicken", "Veggie"];
-const condiments = ["Ketchup", "Mustard", "Mayo"];
-const meat = ["Bacon", "Ham"];
-const greens = ["Lettuce", "Spinach", "Arugula"];
-const extras = ["Cheese", "Pickles", "Onions"];
+let bunsDiv = document.querySelector(".buns");
+let pattiesDiv = document.querySelector(".patties");
+let condimentsDiv = document.querySelector(".condiments");
+let meatDiv = document.querySelector(".meat");
+let greensDiv = document.querySelector(".greens");
+let extrasDiv = document.querySelector(".extras");
+
+const buns = ["Sesame~","Whole Wheat~","Gluten-Free~","Brioche","Chili Cheddar","Black Charcoal~","Oat~"];
+const patties = ["Beef","Chicken","Veggie~","Lamb","Impossible~","Turkey","Spicy Chorizo","Portobello Mushroom~"];
+const meat = ["Bacon","Ham","Prosciutto","Pulled Pork","Fried Chicken Strips","Chili Beef"];
+const greens = ["Lettuce~","Spinach~","Arugula~","Tomato~","Red Onion~","Cucumber Slices~","Bell Peppers~"];
+const condiments = ["Ketchup~","Mustard~","Mayo","Spicy Mustard~","Chipotle Sauce","BBQ Sauce","Sriracha~","Truffle Aioli"];
+const extras = ["Caramelized Onions~","Grilled Zucchini~","Coleslaw","Onion Rings","Mozzarella Sticks","Jalapeño Poppers","Cheese","Fried Egg","Pickled Jalapeños~"];
+// Create elements for each ingredient and append them to the respective divs
+
+buns.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  bunsDiv.appendChild(currentElement);
+})
+
+patties.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  pattiesDiv.appendChild(currentElement);
+})
+
+condiments.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  condimentsDiv.appendChild(currentElement);
+});
+
+meat.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  meatDiv.appendChild(currentElement);
+});
+
+greens.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  greensDiv.appendChild(currentElement);
+});
+
+extras.forEach(value=>{
+  const currentElement = document.createElement("div");
+  currentElement.innerHTML = value;
+  currentElement.classList.add("ingredient");
+  extrasDiv.appendChild(currentElement);
+});
+
+function setupIngredientAlerts() {
+  const allIngredients = document.querySelectorAll(".ingredient");
+
+  allIngredients.forEach(ingredient => {
+    ingredient.addEventListener("click", () => {
+      const name = ingredient.textContent;
+      if (name.includes("~")) {
+        alert(`You clicked: ${name.replace("~", "")}! Note: ${name.replace("~", "")} is vegan!`);
+        console.log(`veganIng.${name.replace("~", "")}`);
+      } else {
+        alert(`You clicked: ${name}`);
+        console.log(`nonVeganIng.${name}`);
+      }
+      // Optionally, you can add more functionality here, like adding the ingredient to a burger
+    });
+  });
+}
+
+// Call this function after creating and appending all ingredient elements
+setupIngredientAlerts();
 
 function getBurgerId() {
     var loadBurgerId = prompt("!WIP! Please enter the ID of the burger you want to load:");
