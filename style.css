@@ -174,7 +174,7 @@ a{
     width: 20vh;
     border: 1px solid black;
     text-align: center;
-    height: 81.4vh;
+    height: 85.2vh;
     overflow: scroll;
     background-color: #d88e3a;
 }
@@ -185,6 +185,10 @@ a{
 
 .ing-section h2 {
     color: #fefefe;
+}
+
+.div-test {
+    background: #333;
 }
 
 @media (max-width: 767px) {
